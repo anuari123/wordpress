@@ -26,8 +26,26 @@ function config(){
 
    ));
 
-
 }
+
+$args = array(
+   'height' => 225,
+   'width' => 1920
+);
+
+add_theme_support('custom-header',$args);
+add_action('post_thumbnails');
+add_theme_support('costum-logo',array(
+
+   'height' => 110,
+   'width' => 200,
+   'flex-height' => true,
+   'flex-width' => true
+));
+add_theme_support('automatic-feed-links')
+add_theme_support('html5',array('comment-list','search-form','comment-form','gallery','caption','style','script'));
+add_theme_support('title-tag');
+
 add_action('after_setup_theme','config',0);
 
 ?>
