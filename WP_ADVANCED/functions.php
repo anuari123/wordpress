@@ -47,5 +47,51 @@ add_theme_support('html5',array('comment-list','search-form','comment-form','gal
 add_theme_support('title-tag');
 
 add_action('after_setup_theme','config',0);
+function wpdevs_sidebars(){
+
+
+  register_sidebar(
+      array(
+         'name' => 'Blog Sidebar',
+         'id' => 'sidebar-blog',
+         'description' => 'This is the Blog Sideabar. You can add your widgets here.',
+         'before_widget' => '<div class="widget-wrapper">',
+         'after_widget' => '</div>',
+         'before_title' => '<h4 class="widget-title">',
+         'after_title' => '</h4>'
+      )
+  );
+
+
+    register_sidebar(
+      array(
+         'name' => 'Service 1',
+         'id' => 'services-1',
+         'description' => 'First service area',
+         'before_widget' => '<div class="widget-wrapper">',
+         'after_widget' => '</div>',
+         'before_title' => '<h4 class="widget-title">',
+         'after_title' => '</h4>'
+      )
+  );
+ 
+     register_sidebar(
+      array(
+         'name' => 'Service 2',
+         'id' => 'services-2',
+         'description' => 'Second service area',
+         'before_widget' => '<div class="widget-wrapper">',
+         'after_widget' => '</div>',
+         'before_title' => '<h4 class="widget-title">',
+         'after_title' => '</h4>'
+      )
+  );
+
+
+
+
+
+}
+add_action('widgets_init','wpdevs_sidebars');
 
 ?>
