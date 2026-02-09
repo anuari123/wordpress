@@ -1,6 +1,57 @@
 <?php get_header();  ?>
-   
-    <div id="content" class="site-content">
+
+
+  <div id="content">
+    <div id="inner_container">
+<div class="slideshow_container">
+      <div id="img_container">
+        <img src="<?php echo get_template_directory_uri();?>/images/tiger-jpg.jpj">
+</div>
+
+
+
+ <div id="img_container">
+        <img src="<?php echo get_template_directory_uri();?>/images/aa.jpg">
+</div>
+
+
+ <div id="img_container">
+        <img src="<?php echo get_template_directory_uri();?>/images/lopa.jpg">
+</div>
+</div>
+
+<div id="overlay">
+    <div id="left_button" class="overlay_button" onclick="onleftbuttonclick()"> < </div>
+    <div id="right_button" class="overlay_button" onclick="onrightbuttonclick()"> > </div>
+</div>
+    </div>
+    
+</div>
+        <div style="text-align:center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+   </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <div id="content" class="site-content">
         <div id="primary" class="content-area">
             <main id="main" class="site-main">
     
